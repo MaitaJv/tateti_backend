@@ -11,7 +11,6 @@ const httpServer = app.listen(8080, ()=>console.log("Servidor en el puerto 8080"
 
 const socketServer = new Server(httpServer, { cors: { origin: '*' } })
 
-//let jugadores = [1, 1]
 let jugadores = 0
 socketServer.on('connection', (socket) => {
 
