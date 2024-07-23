@@ -25,4 +25,9 @@ socketServer.on('connection', (socket) => {
     if(jugadores > 2)       socket.emit('N_jugador', -1)
     if(!(jugadores > 2))    socket.emit('N_jugador', jugadores)
     
+    
+    socket.on('position', (index) =>{
+        console.log(index)
+    })
+    
 })
