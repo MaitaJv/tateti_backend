@@ -29,5 +29,9 @@ socketServer.on('connection', (socket) => {
     socket.on('position', (index) =>{
         console.log(index)
     })
+
+    socket.on('reseteo', (datas) =>{
+        console.log("El jugador " + datas + " reseteo el juego")
+    })
     
 })
