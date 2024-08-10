@@ -84,6 +84,10 @@ socketServer.on('connection', (socket) => {
 
         //setear posiciones en 0
 
+        tabla = ["","","","","","","","",""]
+
+        socketServer.emit("actualizacion", tabla);
+
         //actualizar a todos los conectados
         
         //Seleccionar 2 nuevos jugadores
