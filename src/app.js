@@ -8,7 +8,7 @@ let socketServerController =  new SocketServerController
 let N_jugador = 1;
 let N_espera = 1;
 
-//si la tabla fuera un array de 3 array (filas y columnas) seria mucho mas facil hacer la validacion de los casos de victoria
+//si la tabla fuera un array de 3 array (filas y columnas) seria mucho mas facil hacer la validacion de los casos de victoria, lo se (ahora), perdon xd
 let tabla =    ["","","",
                 "","","",
                 "","",""]
