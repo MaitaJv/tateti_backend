@@ -2,6 +2,8 @@ import GameController from './gameController.js'
 
 let gameController = new GameController
 
+let variablePrueba = 0;
+
 class SocketServerController {
     inicio(data){
         console.log("Inicio: ", data); //llegue
@@ -9,9 +11,8 @@ class SocketServerController {
 
     position(index, socket, clientes, tabla, casosVictoria, socketServer){
 
-        //console.log("SocketServerController - index: ", index);
-        //console.log("SocketServerController - socket: ", socket);
-        //console.log("SocketServerController - clientes: ", clientes);
+        console.log("variablePrueba: ", variablePrueba);
+        variablePrueba++
         
         //consigo cliente asociado al socket.id
         let cliente = clientes.find((cli)=> cli.id == socket.id);
@@ -30,7 +31,6 @@ class SocketServerController {
             tabla[index] = "O";
             posGanadoras = gameController.validarEstado("O", tabla, casosVictoria) //valido estado de victoria
         }
-
         
         console.log("tabla: ", tabla);
         
